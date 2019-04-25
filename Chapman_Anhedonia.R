@@ -4,7 +4,7 @@ Chap[] <- lapply(Chap, function(x) as.numeric(as.character(x)))
 #SubtraChap 1 from all Chapman columns for easy addition later
 Chap[] = sweep(Chap,2,1)
 
-#Create Physical, social, and TEPS dataframes
+#Create Physical, social
 C_P = Chap %>% select(starts_with("CHAPP"))
 C_S = Chap %>% select(starts_with("CHAPS"))
 
